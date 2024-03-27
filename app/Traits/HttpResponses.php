@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Traits ; 
+namespace App\Traits ;
 
-trait HttpResponses{ 
+trait HttpResponses{
     protected function success ($data , $message = null , $code = 200)
     {
         return response()->json([
@@ -10,7 +10,7 @@ trait HttpResponses{
             'message'=> $message,
             'data'=> $data
         ], $code);
-        
+
     }
 
 
@@ -21,6 +21,6 @@ trait HttpResponses{
             'message'=> $message,
             'data'=> $data
         ], $code);
-        
+
     }
 }
